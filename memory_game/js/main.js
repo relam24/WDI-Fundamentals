@@ -26,8 +26,6 @@ var cardThree = "king";
 var cardFour = "queen";
  console.log("User flipped " +cardOne);
  console.log("User flipped " +cardThree);
- console.log(cardImage);
- console.log(suit);
 var cardsInPlay = []
 cardsInPlay.push(cards[cardId].rank);
 var checkForMatch = function () {
@@ -36,23 +34,30 @@ checkForMatch();
     console.log("You found a match!");
 } else {
     console.log("Sorry, try again.");
+}
 };
 var flipCard = function () {
   this.getAttribute('data-id');
     console.log("User flipped" + cards[cardId].rank)
-    cardImage.setAttribute(src[cardId].images
+    cardImage.setAttribute(src[cardId].images)
   if (cardsInPlay.length === [2]) {
     ("cardOne" === "cardTwo");
 } if (true) {
     alert ("You found a match!");
 } else {
     alert ("Sorry, try again");
+}
 };
 var createBoard = function () {
+ console.log("Cards is", cards)
+ console.log("cards.length is" , cards.length)
+ console.log("createBoard is" , createBoard)
+ console.log("createBoard/length is" , createBoard.length)
   for (var i = 0; i <createBoard.length; i++) {
 var newImg = document.createElement('img');
 cardElement('data-id')[i].setAttribute('src', "images/back.png");
 cardElement.addEventListener('click', flipCard);
 document.cardElement.appendChild(game-board);
+}
 }
 createBoard();
