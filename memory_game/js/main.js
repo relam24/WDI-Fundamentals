@@ -2,22 +2,22 @@ var cards = [
 {
   rank: "queen" ,
   suit: "hearts" ,
-  cardImage: "images/queen-of-hearts.png"
+  cardImage: "/Users/relam/Documents/Git/fundamentals/wdi-fundamentals-memorygame/memory_game/images/queen-of-hearts.png"
 },
 {
   rank: "queen" ,
   suit: "diamonds" ,
-  cardImage: "images/queen-of-diamonds.png"
+  cardImage: "/Users/relam/Documents/Git/fundamentals/wdi-fundamentals-memorygame/memory_game/images/queen-of-diamonds.png"
 },
 {
   rank: "king" ,
   suit: "hearts" ,
-  cardImage: "images/king-of-hearts.png"
+  cardImage: "/Users/relam/Documents/Git/fundamentals/wdi-fundamentals-memorygame/memory_game/images/king-of-hearts.png"
 },
 {
   rank: "king" ,
   suit: "diamonds" ,
-  cardImage: "images/king-of-diamonds.png"
+  cardImage: "/Users/relam/Documents/Git/fundamentals/wdi-fundamentals-memorygame/memory_game/images/king-of-diamonds.png"
 }
 ];
 var cardOne = "queen";
@@ -27,15 +27,15 @@ var cardFour = "queen";
  console.log("User flipped " +cardOne);
  console.log("User flipped " +cardThree);
 var cardsInPlay = []
-cardsInPlay.push(cards[cardId].rank);
+cardsInPlay.push(cards[cardsInPlay].rank);
 var checkForMatch = function () {
   if (cardsInPlay [0] === cardsInPlay[1]) {
-checkForMatch();
     console.log("You found a match!");
 } else {
     console.log("Sorry, try again.");
 }
 };
+checkForMatch();
 var flipCard = function () {
   this.getAttribute('data-id');
     console.log("User flipped" + cards[cardId].rank)
@@ -48,6 +48,8 @@ var flipCard = function () {
     alert ("Sorry, try again");
 }
 };
+flipCard(0);
+flipCard(2);
 var createBoard = function () {
  console.log("Cards is", cards)
  console.log("cards.length is" , cards.length)
