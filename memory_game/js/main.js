@@ -27,7 +27,7 @@ var cardFour = "queen";
  console.log("User flipped " +cardOne);
  console.log("User flipped " +cardThree);
 var cardsInPlay = []
-cardsInPlay.push(cards[cardsInPlay].rank);
+cardsInPlay.push(cards["queen","king"].rank);
 var checkForMatch = function () {
   if (cardsInPlay [0] === cardsInPlay[1]) {
     console.log("You found a match!");
@@ -38,7 +38,7 @@ var checkForMatch = function () {
 checkForMatch();
 var flipCard = function () {
   this.getAttribute('data-id');
-    console.log("User flipped" + cards[cardId].rank)
+    console.log("User flipped" + cards["queen","king"].rank)
     cardImage.setAttribute(src[cardId].images)
   if (cardsInPlay.length === [2]) {
     ("cardOne" === "cardTwo");
