@@ -54,7 +54,7 @@ var createBoard = function () {
  console.log("Cards is", cards)
  console.log("cards.length is" , cards.length)
  console.log("createBoard is" , createBoard)
- console.log("createBoard/length is" , createBoard.length)
+ console.log("createBoard.length is" , createBoard.length)
   for (var i = 0; i <createBoard.length; i++) {
 var newImg = document.createElement('img');
 cardElement('data-id')[i].setAttribute('src', "images/back.png");
